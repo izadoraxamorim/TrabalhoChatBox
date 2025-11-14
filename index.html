@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBox - IA</title>
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="shortcut icon" href="/style/favicon.ico" />
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body class="bg-light">
+
+    <nav class="navbar bg-white border-bottom p-2">
+    <div class="container-fluid">
+        <h2 class="mx-auto m-0 text-center">Assistente de IA</h2>
+    </div>
+</nav>
+
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarHistorico">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Histórico</h5>
+        </div>
+
+        <div class="offcanvas-body">
+            <div id="historicoConteudo"></div>
+        </div>
+    </div>
+
+    <main class="container py-4">
+        <div class="chat-box shadow-sm p-4 rounded bg-white">
+
+            <div id="messages" class="mb-3" style="height:300px; overflow-y:auto;">
+                <div class="text-center text-muted mb-2" id="msgInicial">
+            Olá! Pronto(a) para começar?
+                </div>
+            </div>
+
+
+            <div class="d-flex">
+                <input id="inputMsg" type="text" class="form-control me-2" placeholder="Digite sua mensagem...">
+                <button class="btn btn-dark" id="btnEnviar">Enviar</button>
+            </div>
+
+            <button class="btn btn-outline-dark btn-sm mt-3" id="btnLimparChat">
+                Limpar chat
+            </button>
+
+        </div>
+    </main>
+
+    <script src="style/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+   <center><footer>Feito por: Izadora Amorim</footer></center>
+</body>
+</html>
